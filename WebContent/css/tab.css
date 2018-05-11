@@ -1,0 +1,102 @@
+
+
+ul.tab {
+    list-style-type: none;
+    margin-left:10px;
+	
+    padding: 10px ;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    
+	/* background: linear-gradient(to bottom, #ECECEC 100%, #D1D1D1 100%); */
+	box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+	text-shadow: 0 1px #FFF;
+	margin: 0 -10px;
+	padding:15 15px;
+	width:auto;
+	
+	
+	
+	
+	
+}
+
+/* Float the list items side by side */
+ul.tab li {float:left;
+		display:block;
+		
+		padding-left:20px;
+		border-radius:2px;
+		border-color:black;
+		color:lightgray;
+		background-color:darkblue;
+		box-shadow:5px 25px;
+		border-right:1px solid #191970;
+		border-color:blue;
+		font-weight:600;
+		width:130px;
+		
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+	 border: 1px solid transparent;
+    border-radius: 15px 15px 0 0;
+	
+   }
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color:blue;
+	color:white;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    color:white;
+    cursor: default;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: rgba(100,255,255,23); 
+	background-color:blue;
+    border-bottom-color: transparent;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+	font-weight:bold;
+	
+	color:darkblue;
+	border:blue;
+}
+table{
+	color:blue;
+	background: linear-gradient(to bottom, #ECECEC 100%, #D1D1D1 100%);
+	box-shadow: 0 0px 20px rgba(0, 0, 0.8, 0.4), inset 0 1px 0 #FFF;
+	
+	margin-left:10px;
+}
+th
+{
+	background-color:
+
+}
+
+ul{
+	color:darkblue;
+	font-weight:900;
+	display:block;
+	
+}

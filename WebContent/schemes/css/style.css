@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 22, 2014, 2:39:59 PM
+    Author     : SANJAY
+*/
+
+/*Style for admission form*/
+
+body {
+ 
+ background-size: 1440px 800px;
+ /* background-repeat:no-repeat; */
+ display:compact;
+ font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+ opacity: 1;
+ background-color: rgb(207, 222, 243);
+ background-image: linear-gradient(to left, rgb(224, 234, 252), rgb(207, 222, 243));
+
+ }
+ 
+.lmgtab{
+    font-family: LMG-Arun;
+    font-size: 1.4em;
+    }
+.lmglabel{
+    font-family: LMG-Arun;
+    font-size: 1.4em;
+}
+.mainbar{
+    padding-top: 30px;
+}
+.spacing{
+    margin-top: 20px;
+}
+.margindata{
+    
+}
+.lmg{
+    font-family: LMG-Arun;
+}
+.egram-scroll{
+	overflow-x:scroll;
+	width:100px;
+	}
+		table
+	{
+		
+				border-color:#CCC;
+	}
+	td{
+		color:blue;
+	}
+	
+	th{
+	
+		color:darkblue;
+		background-color:#CCC;
+		box-shadow:5px 25px;
+	}
+	tr:nth-child(even) {background: #CCC}
+	tr:nth-child(odd) {background: #fff}
+	th {
+	background: linear-gradient(to bottom, #ECECEC 80%, #D1D1D1 100%);
+	box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+	text-shadow: 0 1px #FFF;
+	margin: 0 -5px;
+	padding:15 15px;
+	color:blue;
+	
+	/*border-top-left-radius: 10px;
+	border-top-right-radius: 10px; */
+	/* position: relative; */
+	} 
+		/* th.selected {
+		    background: #FFF;
+		    color: #333;
+		    z-index: 2;
+		    border-bottom-color: #FFF;
+		}
+		th.selected:before {
+		    box-shadow: 2px 2px 0 #CCC;
+		}
+		th.selected:after {
+		    box-shadow: -2px 2px 0 #CCC;
+		}
+		 */
+		th:visited {
+        color:#000;
+        background:#708090;
+        padding:20px 40px 4px 10px;
+        float:left;
+        width:auto;
+        border-right:1px solid #191970;
+        text-decoration:none;
+        font:bold 1em/1em Arial, Helvetica, sans-serif;
+        text-transform:uppercase;
+        text-shadow: 2px 2px 2px #555;
+		}
+		th:hover {
+        color:white;
+        background:#191970;
+		}
+		th:first-child {
+        border-left:1px solid #191970;
+    }
+	label{
+		 font: bold 12px/30px Georgia, serif;
+		 
+		}
+		li{
+			color:green;
+		}
+		legend{
+			font-size:25px;
+			color:darkblue;
+			
+		}
+	

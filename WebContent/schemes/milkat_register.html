@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <meta charset="utf-8">
+        <title>milkat register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+		<link href="css/tab.css"  rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css"  rel="stylesheet">
+		<link href="css/style.css"  rel="stylesheet">
+		<!-- <link href="form_css/style.css"  rel="stylesheet"> -->
+
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<!--  jQuery -->
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<!-- <script type="text/javascript" src="js/dateSelect.js"></script> -->
+
+		<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap-iso.css" />
+
+		<!-- Bootstrap Date-Picker Plugin -->
+		<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap-datepicker3.css"/>
+
+		
+		
+		<script src="js/tab.js"></script>
+		<!-- <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>-->
+		<script src="js/mindmup-editabletable.js"></script>
+		 
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="ico/favicon.png">
+</head>
+
+<body>
+		<div class="container spacing">
+		<div class="row">
+			<div class="span2" id="myScrollspy">
+				<fieldset>
+					<legend><strong>યોજના</strong></legend>	
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href="CDP_14.html">CDP-14</a></li>
+						<li><a href="HSG_1_14_15.html">HSG-1 14-15</a></li>
+						<li><a href="HSG_1_15_16.html">HSG-1 15-16</a></li>
+						<li><a href="eGram.html">ઈ-ગ્રામ</a></li>
+						<li><a href="IAY.html">ઇન્દિરા  આવાસ યોજના </a></li>
+						<li><a href="Tax_Collection.html">પંચાયત વેરા વસુલાત પત્રક </a></li>
+						<li><a href="Gram_Svagat.html">ગ્રામ સ્વાગત</a></li>
+						<li><a href="Land_Revenue.html">જમીન મહેસુલ વેરા વસુલાત</a></li>
+						<li style="display:block;background-color:white"><a href="milkat_register.html">મિલકત રજીસ્ટર </a></li>
+						<li><a href="Gram_Audit_Para.html">ગ્રામ પંચાયત ઓડીટ પેરા</a></li>
+						<li><a href="14th_Finance.html">૧૪ મુ નાણાપંચ </a></li>
+						<li><a href="Gram_SBM.html">સ્વચ્છ ભારત મિશન</a></li>
+						
+
+					</ul>
+				</fieldset>	
+			</div>
+			<div class="span10">
+				<fieldset>
+					<legend><strong>મિલકત રજીસ્ટર </strong></legend>
+					<ul class="inline" style="">
+						<li><label class="">તાલુકાનું નામ</label></li>
+						<li><input id="district" name="district" class="span1" type="text" value="Chhotaudepur" disabled></li>
+						<li><label class="">GRAM PANCHAYT </label></li>
+						<li><input id="grampanchayat" name="grampanchayat" class="span2" type="text" value="" disabled></li>
+						<li><label class="">DATE</label></li>
+						<li>
+							<input type="Text" id="date" name="date" disabled>
+						</li> 
+					</ul>
+	
+					<ul class="tab" style="text-align:center;width:">
+						<li style="width:450px"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'T1')">મિલ્કત રજીસ્ટ્રશન ફોર્મ </a></li>
+						<li style="width:450px"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'T2')">મિલકત રેજિસ્ટર </a></li>
+					</ul>
+				
+					<form id="T1" class="tabcontent">
+					<fieldset>
+					<h1 style="text-align:center"> મિલ્કત રજીસ્ટ્રશન ફોર્મ </h1>
+					<label style="font-size:20px">મિલકત નંબર:
+					<input type="text" placeholder="મિલકત નંબર:" name="property_number" style="float:right;width:500px" disabled></label><br>
+					<label style="font-size:20px">માલિક નું  નામ:
+					<input type="text" placeholder="માલિક નું  નામ:" name="Owner_name" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">રહેનાર નું  નામ:
+					<input type="text" placeholder="રહેનાર નું  નામ:" name="Occupant_name" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">વિસ્તાર નામ:
+					<input type="text" placeholder="વિસ્તાર નામ:" name="Area_name" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">મિલકત વર્ણન:
+					<input type="text" placeholder="મિલકત વર્ણન:" name="Property_Description" style="float:right;width:500px"></label><br>
+					
+					<label style="font-size:20px">વાર્ષિક ભાડું:
+					<input type="text" placeholder="વાર્ષિક ભાડું:" name="Annual_rent" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">કર ની આકારેલી રકમ :
+					<input type="text" placeholder="કર ની આકારેલી રકમ " name="Tax_estimated" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">પછલા વધારેલા અને ગટાળા ની બાબત  :
+					<input type="text" placeholder="પછલા વધારેલા અને ગટાળા ની બાબત" name="amount" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">રજીસ્ટર પાનાં ક્રમાંક:
+					<input type="text" placeholder="રજીસ્ટર પાનાં ક્રમાંક" name="Page_number" style="float:right;width:500px"></label><br>
+					</fieldset>
+					 <ul class="inline spacing">
+						<li><button type="sumit" class="btn btn-large btn-primary" >Submit</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Cancel</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Print</button></li>
+					</ul>
+					</form>
+					<div id="T2"  class="tabcontent" style="" >
+          <table id="mainTable" class="table table-striped" border="1">
+            <thead>
+				<tr>
+					<th colspan="9" style="text-align:center"> મિલકત વિગતો</th>
+				</tr>
+					<tr>
+					<!-- <th>Cost</th><th>Profit</th><th>Fun</th></tr></thead> -->
+					<th colspan="" class="" style="text-align:center">મિલકત નંબર</th>
+									<th colspan="" class="" style="text-align:center">માલિક નું  નામ </th>
+									<th colspan="" class="" style="text-align:center">રહેનાર નું  નામ </th>
+									<th colspan="" class="" style="text-align:center">વિસ્તાર નામ </th>
+									<th colspan="" class="" style="text-align:center">મિલકત વર્ણન</th>
+									
+									<th colspan="" class="" style="text-align:center">વાર્ષિક ભાડું:</th>
+									<th colspan="" class="" style="text-align:center">કર ની આકારેલી રકમ :</th>
+									<th colspan="" class="" style="text-align:center">પછલા વધારેલા અને ગટાળા ની બાબત  :</th>
+									<th colspan="" class="" style="text-align:center">રજીસ્ટર પાનાં ક્રમાંક:</th>
+					</tr>
+			</thead>
+            <tbody>
+								<tr>
+									<td style="text-align:CENTER;height:30px;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+
+								</tr>
+							</tbody>
+</table>
+ <ul class="inline spacing">
+						<li><button  class="btn btn-large btn-info" onclick="openCity1(event, 'A1')">મિલકત ના વિભાજન માટે </button></li>
+						<li ><button  type="sumit" class="btn btn-large btn-info" >Submit</button></li> 
+						<li><button type="reset" class="btn btn-large btn-info" >Cancel</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Print</button></li>
+				</ul>
+
+</div>			
+				  
+					<form id="A1" class="tabcontent">
+					<fieldset>
+					<h1 style="text-align:center">મિલકત ના વિભાજન માટે </h1>
+					<label style="font-size:20px">મિલકત નંબર :
+					<select class="selectpicker" style="float:right;width:500px">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					</select>
+					<br><br>
+					<label style="font-size:20px">મુખ્ય મલિક :
+					<input type="text" placeholder="મુખ્ય મલિક નું નામ" name="Parent_Owner_name" style="float:right;width:500px" disabled></label><br>
+					<label style="font-size:20px">રહેનાર નું  નામ::
+					<input type="text" placeholder="રહેનાર નું  નામ:" name="Owner_name" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">વિસ્તાર નામ::
+					<input type="text" placeholder="વિસ્તાર નામ:" name="Area_name" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">મિલકત વર્ણન::
+					<input type="text" placeholder="મિલકત વર્ણન:" name="Property_Description" style="float:right;width:500px"></label><br> 
+					<label style="font-size:20px">વાર્ષિક ભાડું:
+					<input type="text" placeholder="વાર્ષિક ભાડું:" name="Annual_rent" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">કર ની આકારેલી રકમ :
+					<input type="text" placeholder="કર ની આકારેલી રકમ " name="Tax_estimated" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">પછલા વધારેલા અને ગટાળા ની બાબત  :
+					<input type="text" placeholder="પછલા વધારેલા અને ગટાળા ની બાબત" name="amount" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">રજીસ્ટર પાનાં ક્રમાંક:
+					<input type="text" placeholder="રજીસ્ટર પાનાં ક્રમાંક" name="Page_number" style="float:right;width:500px"></label><br>
+					
+					</fieldset>
+					<ul class="inline spacing">
+						<li><button type="sumit" class="btn btn-large btn-primary" >Submit</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Cancel</button></li>
+						
+					</ul> 
+					</form>
+					
+					<form id="A2" class="tabcontent">
+					<fieldset>
+					<h1 style="text-align:center">માલિકી ફેરફાર</h1>
+					<label style="font-size:20px">મિલકત નંબર :
+					<input type="text" placeholder="મિલકત નંબર" name="property_number" style="float:right;width:500px" disabled></label><br>
+					<label style="font-size:20px">મિલકત નંબર:
+					<input type="text" placeholder="મિલકત નંબર" name="property_number" style="float:right;width:500px" disabled></label><br>
+					<label style="font-size:20px">નવા માલિક:
+					<input type="text" placeholder="નવા માલિક" name="property_number" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">Attachment:
+					<input type="file" placeholder="Attachment" name="Attachment" style="float:right;width:500px"></label><br>
+					</fieldset>
+					<ul class="inline spacing">
+						<li><button type="sumit" class="btn btn-large btn-primary" >Submit</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Cancel</button></li>
+					</ul> 
+					</form>
+					
+					<form id="A3" class="tabcontent">
+					<fieldset>
+					<h1 style="text-align:center">રેહનાર ના ફેરફાર </h1>
+					<label style="font-size:20px">મિલકત નંબર:
+					<input type="text" placeholder="મિલકત નંબર" name="property_number" style="float:right;width:500px" disabled></label><br>
+					<label style="font-size:20px">રહેનાર નું  નામ::
+					<input type="text" placeholder="રહેનાર નું  નામ:" name="Owner_name" style="float:right;width:500px"></label><br>
+					
+					</fieldset>
+					<ul class="inline spacing">
+						<li><button type="sumit" class="btn btn-large btn-primary" >Submit</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Cancel</button></li>
+					</ul> 
+					</form>
+					
+					<form id="A4" class="tabcontent">
+					<fieldset>
+					<h1 style="text-align:center">કર અને ભાડું વિગતો</h1>
+					<label style="font-size:20px">મિલકત નંબર:
+					<input type="text" placeholder="મિલકત નંબર" name="property_number" style="float:right;width:500px" disabled></label><br>
+					<label style="font-size:20px">પાછલા વધારેલા અને ગટાળા ની બાબત :
+					<input type="text" placeholder="પાછલા વધારેલા અને ગટાળા ની બાબત " name="Area_name" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">કર ની આકારેલી  રકમ :
+					<input type="text" placeholder="કર ની આકારેલી  રકમ " name="Property_Description" style="float:right;width:500px"></label><br>
+					<label style="font-size:20px">વાર્ષિક ભાડું:
+					<input type="text" placeholder="વાર્ષિક ભાડું" name="Owner_name" style="float:right;width:500px"></label><br>
+					
+					</fieldset>
+					<ul class="inline spacing">
+						<li><button type="sumit" class="btn btn-large btn-primary" >Submit</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Cancel</button></li>
+					</ul> 
+					</form>
+					
+					
+					<!-- <div id="B1" class="tabcontent">
+					<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="8" style="text-align:center">Property details</th>
+								</tr>
+								<tr>
+									<th colspan="" class="" style="text-align:center">મિલકત નંબર</th>
+									<th colspan="" class="" style="text-align:center">વિસ્તાર નામ: </th>
+									<th colspan="" class="" style="text-align:center">મિલકત વર્ણન:</th>
+									<th colspan="" class="" style="text-align:center">રહેનાર નું  નામ: </th>
+									<th colspan="" class="" style="text-align:center">વાર્ષિક ભાડું:</th>
+									<th colspan="" class="" style="text-align:center">કર ની આકારેલી રકમ :</th>
+									<th colspan="" class="" style="text-align:center">પછલા વધારેલા અને ગટાળા ની બાબત  :</th>
+									<th colspan="" class="" style="text-align:center">રજીસ્ટર પાનાં ક્રમાંક:</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:CENTER;height:30px;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div> -->
+					<div id="B1" class="tabcontent">
+					<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="9" style="text-align:center">Split propert details</th>
+								</tr>
+								<tr>
+									<th colspan="" class="" style="text-align:center">મિલકત નંબર</th>
+									<th colspan="" class="" style="text-align:center">વિસ્તાર નામ: </th>
+									<th colspan="" class="" style="text-align:center">મિલકત વર્ણન:</th>
+									<th colspan="" class="" style="text-align:center">રહેનાર નું  નામ: </th>
+									<th colspan="" class="" style="text-align:center">વાર્ષિક ભાડું:</th>
+									<th colspan="" class="" style="text-align:center">કર ની આકારેલી રકમ :</th>
+									<th colspan="" class="" style="text-align:center">પછલા વધારેલા અને ગટાળા ની બાબત  :</th>
+									<th colspan="" class="" style="text-align:center">રજીસ્ટર પાનાં ક્રમાંક:</th>
+									<th colspan="" class="" style="text-align:center">Parent Owner of Property </th>
+
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:CENTER;height:30px;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;">
+									<button class="btn btn-success" data-toggle="modal" data-target="#myModal" contenteditable="false">Edit</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div id="B2" class="tabcontent">
+					<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="10" style="text-align:center">Ownership change propert details</th>
+								</tr>
+								<tr>
+									<th colspan="" class="" style="text-align:center">મિલકત નંબર</th>
+									<th colspan="" class="" style="text-align:center">વિસ્તાર નામ: </th>
+									<th colspan="" class="" style="text-align:center">મિલકત વર્ણન:</th>
+									<th colspan="" class="" style="text-align:center">રહેનાર નું  નામ: </th>
+									<th colspan="" class="" style="text-align:center">વાર્ષિક ભાડું:</th>
+									<th colspan="" class="" style="text-align:center">કર ની આકારેલી રકમ :</th>
+									<th colspan="" class="" style="text-align:center">પછલા વધારેલા અને ગટાળા ની બાબત  :</th>
+									<th colspan="" class="" style="text-align:center">રજીસ્ટર પાનાં ક્રમાંક:</th>
+									<th colspan="" class="" style="text-align:center">New રહેનાર નું  નામ:</th>
+									<th colspan="" class="" style="text-align:center">Attachment</th>
+
+
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:CENTER;height:30px;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<div id="B3" class="tabcontent">
+					<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="9" style="text-align:center">Occupancy change propert details</th>
+								</tr>
+								<tr>
+									<th colspan="" class="" style="text-align:center">મિલકત નંબર</th>
+									<th colspan="" class="" style="text-align:center">વિસ્તાર નામ: </th>
+									<th colspan="" class="" style="text-align:center">મિલકત વર્ણન:</th>
+									<th colspan="" class="" style="text-align:center">રહેનાર નું  નામ: </th>
+									<th colspan="" class="" style="text-align:center">વાર્ષિક ભાડું:</th>
+									<th colspan="" class="" style="text-align:center">કર ની આકારેલી રકમ :</th>
+									<th colspan="" class="" style="text-align:center">પછલા વધારેલા અને ગટાળા ની બાબત  :</th>
+									<th colspan="" class="" style="text-align:center">રજીસ્ટર પાનાં ક્રમાંક:</th>
+									<th colspan="" class="" style="text-align:center">Occupant name</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:CENTER;height:30px;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div id="B4" class="tabcontent">
+					<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="8" style="text-align:center">View tax and rent estimated details</th>
+								</tr>
+								<tr>
+									<th colspan="" class="" style="text-align:center">મિલકત નંબર</th>
+									<th colspan="" class="" style="text-align:center">પછલા વધારેલા અને ગટાળા ની બાબત  :</th>
+									<th colspan="" class="" style="text-align:center">Tax estimated</th>
+									<th colspan="" class="" style="text-align:center">વાર્ષિક ભાડું:</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:CENTER;height:30px;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									<td style="text-align:CENTER;"></td>
+									
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- <ul class="inline spacing">
+						<li><button type="sumit" class="btn btn-large btn-primary" >Submit</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Cancel</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Print</button></li>
+				</ul> -->
+				</fieldset>
+			</div>	
+		</div>	
+	</div>
+<script>
+  $('#mainTable').editableTableWidget().numericInputExample().find('td:first').focus();
+ <!--  $('#textAreaEditor').editableTableWidget({editor: $('<textarea>')});
+ <!--  window.prettyPrint && prettyPrint(); --> -->
+</script>
+	
+	
+</body>
+</html> 

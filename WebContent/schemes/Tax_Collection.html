@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <meta charset="utf-8">
+        <title>eGram</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+		<link href="css/tab.css"  rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css"  rel="stylesheet">
+		<link href="css/style.css"  rel="stylesheet">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<!--  jQuery -->
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<!-- <script type="text/javascript" src="js/dateSelect.js"></script> -->
+
+		<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap-iso.css" />
+
+		<!-- Bootstrap Date-Picker Plugin -->
+		<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap-datepicker3.css"/>
+
+		
+		
+		<script src="js/tab.js"></script>
+		
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="ico/favicon.png">
+</head>
+
+	<body>
+	<div class="container spacing">
+	<div class="row">
+			<div class="span2" id="myScrollspy">
+				<fieldset>
+					<legend><strong>યોજના</strong></legend>	
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href="CDP_14.html">CDP-14</a></li>
+						<li><a href="HSG_1_14_15.html">HSG-1 14-15</a></li>
+						<li><a href="HSG_1_15_16.html">HSG-1 15-16</a></li>
+						<li><a href="eGram.html">ઈ-ગ્રામ</a></li>
+						<li><a href="IAY.html">ઇન્દિરા  આવાસ યોજના </a></li>
+						<li style="display:block;background-color:white"><a href="Tax_Collection.html">પંચાયત વેરા વસુલાત પત્રક </a></li>
+						<li><a href="Gram_Svagat.html">ગ્રામ સ્વાગત</a></li>
+						<li><a href="Land_Revenue.html">જમીન મહેસુલ વેરા વસુલાત</a></li>
+						<li><a href="milkat_register.html">મિલકત રજીસ્ટર </a></li>
+						<li><a href="Gram_Audit_Para.html">ગ્રામ પંચાયત ઓડીટ પેરા</a></li>
+						<li><a href="14th_Finance.html">૧૪ મુ નાણાપંચ </a></li>
+						<li><a href="Gram_SBM.html">સ્વચ્છ ભારત મિશન</a></li>
+					
+					</ul>
+				</fieldset>	
+			</div>
+			<div class="span10">
+				<fieldset>
+					<legend><strong>પંચાયત વેરા વસુલાત પત્રક </strong></legend>
+					<ul class="inline" style="">
+						<li><label class="">તાલુકાનું નામ</label></li>
+						
+						<li><input id="district" name="district" class="span1" type="text" value="Chhotaudepur" disabled></li>
+						<li><label class="">GRAM PANCHAYT </label></li>
+						<li><input id="grampanchayat" name="grampanchayat" class="span2" type="text" value="" disabled></li>
+						<li><label class="">DATE</label></li>
+						<li>
+							<input type="Text" id="date" name="date" disabled>
+	  	
+						</li> 
+						<!-- <li><label class="">DATE</label></li>
+						<li>
+							<input id="date1" name="date1" class="span2" type="text" value="18/02/2016" disabled>
+						</li>
+						<li><label class="">YEAR</label></li>
+						<li>
+							<select name="year" class="span2">
+                                <option>2012</option>
+								<option>2013</option>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+							</select>
+						</li> -->
+					</ul>
+	
+	<ul class="tab" style="text-align:center">
+		
+		<li style=""><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'T1')">માંગણુ </a></li>
+		<li style=""><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'T2')">ગત માસ સુધી કરેલ વસુલાત</a></li>
+		<li style="width:"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'T3')">ચાલુ માસ માં કરેલ વસુલાત </a></li>
+		<li style="width"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'T4')">કુલ વસુલાત </a></li>
+		<li style="width:"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'T5')">માસના અંતે બાકી વસુલાત</a></li>
+		<li style="width:"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'T6')">ટકાવારી %</a></li>
+		
+	</ul>
+
+	
+	
+	
+	
+	<div id="T1"  class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr> 
+									<th class="" style="" rowspan="">ક્ર્મ</th>
+									<th class="" style="" rowspan="">વેરાનો પ્રકાર </th>
+									<th class="" style="">પાછલું બાકી </th>
+									<th class="" style="">ચાલુ </th>
+									<th class="" style="">કુલ </th>
+								
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td style="text-align:CENTER;">વ્વસાય વેરો</td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">2</td>
+									<td style="text-align: CENTER;">ઘર વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+							   </tr>
+							   <tr>
+									<td style="text-align: CENTER;">3</td>
+									<td style="text-align: CENTER;">સ્ટ્રીટ લાઈટ વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">4</td>
+									<td style="text-align: CENTER;">પાણી વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">5</td>
+									<td style="text-align: CENTER;">સફાય વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+			</div>
+	</div>
+	
+	
+	<div id="T2"  class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr> 
+									<th class="" style="" rowspan="">ક્ર્મ</th>
+									<th class="" style="" rowspan="">વેરાનો પ્રકાર </th>
+									<th class="" style="">પાછલું બાકી </th>
+									<th class="" style="">ચાલુ </th>
+									<th class="" style="">કુલ </th>
+								
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td style="text-align:CENTER;">વ્વસાય વેરો</td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">2</td>
+									<td style="text-align: CENTER;">ઘર વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+							   </tr>
+							   <tr>
+									<td style="text-align: CENTER;">3</td>
+									<td style="text-align: CENTER;">સ્ટ્રીટ લાઈટ વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">4</td>
+									<td style="text-align: CENTER;">પાણી વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">5</td>
+									<td style="text-align: CENTER;">સફાય વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+			</div>
+	</div>
+	
+	<div id="T3"  class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr> 
+									<th class="" style="" rowspan="">ક્ર્મ</th>
+									<th class="" style="" rowspan="">વેરાનો પ્રકાર </th>
+									<th class="" style="">પાછલું બાકી </th>
+									<th class="" style="">ચાલુ </th>
+									<th class="" style="">કુલ </th>
+								
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td style="text-align:CENTER;">વ્વસાય વેરો</td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">2</td>
+									<td style="text-align: CENTER;">ઘર વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+							   </tr>
+							   <tr>
+									<td style="text-align: CENTER;">3</td>
+									<td style="text-align: CENTER;">સ્ટ્રીટ લાઈટ વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">4</td>
+									<td style="text-align: CENTER;">પાણી વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">5</td>
+									<td style="text-align: CENTER;">સફાય વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+			</div>
+	</div>
+
+	<div id="T4"  class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr> 
+									<th class="" style="" rowspan="">ક્ર્મ</th>
+									<th class="" style="" rowspan="">વેરાનો પ્રકાર </th>
+									<th class="" style="">પાછલું બાકી </th>
+									<th class="" style="">ચાલુ </th>
+									<th class="" style="">કુલ </th>
+								
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td style="text-align:CENTER;">વ્વસાય વેરો</td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">2</td>
+									<td style="text-align: CENTER;">ઘર વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+							   </tr>
+							   <tr>
+									<td style="text-align: CENTER;">3</td>
+									<td style="text-align: CENTER;">સ્ટ્રીટ લાઈટ વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">4</td>
+									<td style="text-align: CENTER;">પાણી વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">5</td>
+									<td style="text-align: CENTER;">સફાય વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+			</div>
+	</div>
+	
+	<div id="T5"  class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr> 
+									<th class="" style="" rowspan="">ક્ર્મ</th>
+									<th class="" style="" rowspan="">વેરાનો પ્રકાર </th>
+									<th class="" style="">પાછલું બાકી </th>
+									<th class="" style="">ચાલુ </th>
+									<th class="" style="">કુલ </th>
+								
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td style="text-align:CENTER;">વ્વસાય વેરો</td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">2</td>
+									<td style="text-align: CENTER;">ઘર વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+							   </tr>
+							   <tr>
+									<td style="text-align: CENTER;">3</td>
+									<td style="text-align: CENTER;">સ્ટ્રીટ લાઈટ વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">4</td>
+									<td style="text-align: CENTER;">પાણી વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">5</td>
+									<td style="text-align: CENTER;">સફાય વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+			</div>
+	</div>
+
+	
+	<div id="T6"  class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr> 
+									<th class="" style="" rowspan="">ક્ર્મ</th>
+									<th class="" style="" rowspan="">વેરાનો પ્રકાર </th>
+									<th class="" style="">ટકાવારી %</th>
+									
+								
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td style="text-align:CENTER;">વ્વસાય વેરો</td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">2</td>
+									<td style="text-align: CENTER;">ઘર વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+
+							   </tr>
+							   <tr>
+									<td style="text-align: CENTER;">3</td>
+									<td style="text-align: CENTER;">સ્ટ્રીટ લાઈટ વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									
+								</tr>
+								<tr>
+									<td style="text-align: CENTER;">4</td>
+									<td style="text-align: CENTER;">પાણી વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+										</tr>
+								<tr>
+									<td style="text-align: CENTER;">5</td>
+									<td style="text-align: CENTER;">સફાય વેરો </td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+										</tr>
+								
+								
+							</tbody>
+						</table>
+			</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div id="A2" class="tabcontent">
+<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+							
+								<tr>
+									<th colspan="3" class="" style="text-align:center">મરણ નું પ્રમાણ પત્ર </th>
+								<tr>
+								<tr>
+									<th class="" style="">ક્ર્મ</th>
+									<th class="" style="">નકલ</th>
+									<th class="" style="">આવક </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<div class="box">
+									<td><input id="" name="" class="box" type="text" value="" ></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									</div>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+	<div id="A3" class="tabcontent">
+	<div class="table-responsive" style="overflow-x:scroll;">
+							<table id="hsg3" border="1" class="table table-hover">
+								<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">ચરિત્ર નું પ્રમાણ પત્ર </th>
+								<tr>
+									
+									<tr>
+										<th class="" style="">ક્ર્મ</th>
+										<th class="" style="">નકલ</th>
+										<th class="" style="">આવક </th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="text-align: CENTER;">1</td>
+										<td><input id="" name="" class="box" type="text" value=""></td>
+										<td><input id="" name="" class="box" type="text" value=""></td>
+										</tr>
+								</tbody>
+							</table>
+				</div>
+		</div>
+		<div id="A4" class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">જાતિ  નું પ્રમાણ પત્ર  </th>
+								<tr>
+								<tr>
+									<th class="" style="">ક્ર્મ</th>
+									<th class="" style="">નકલ</th>
+									<th class="" style="">આવક </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+	</div>
+	<div id="A5" class="tabcontent">
+			<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">આવક  નું પ્રમાણ પત્ર</th>
+								<tr>
+								<tr>
+									<th class="" style="">ક્ર્મ</th>
+									<th class="" style="">નકલ</th>
+									<th class="" style="">આવક </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+	</div>
+		<div id="A6" class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">૭/૧૨ , ૮ અ , નં ૬ </th>
+								<tr>
+								<tr>
+									<th class="" style="">ક્ર્મ</th>
+									<th class="" style="">નકલ</th>
+									<th class="" style="">આવક </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+		</div>
+				
+		<div id="A7" class="tabcontent">
+					<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">MGVCL BILL</th>
+								<tr>
+								<tr>
+									<th class="" style="">ક્ર્મ</th>
+									<th class="" style="">બીલ</th>
+									<th class="" style="">આવક </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+		</div>
+		<div id="B1" class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">BADEA ENTRI </th>
+								<tr>
+								
+								<tr>	
+									<th class="" style="">ક્ર્મ</th>
+									<th class="" style="">ENTRI</th>
+									<th class="" style="">આવક </th>
+									<!-- <th class="" style="">અરજી</th>
+									<th class="" style="">આવક </th>
+									<th class="" style="">બીલ</th>
+									<th class="" style="">આવક</th>
+									<th class="" style="">SERVICE</th>
+									<th class="" style="">આવક</th>
+									<th class="" style="">નકલ</th>
+									<th class="" style="">આવક </th> -->
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<!--b2 <td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									b3<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+									<td><input id="" name="" class="span1" type="text" value=""></td>
+							 -->		</tr>
+							</tbody>
+						</table>
+					</div>
+		</div>
+		<div id="B2" class="tabcontent">
+		<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">I ખેડૂત</th>
+								<tr>
+								<tr>
+									<th class="" style="">ક્ર્મ</th>
+									<th class="" style="">અરજી</th>
+									<th class="" style="">આવક </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+		</div>
+		<div id="B3" class="tabcontent">
+			<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">GSPC BILL</th>
+								<tr>
+								<tr>
+									<th class="" style="">ક્ર્મ</th>
+									<th class="" style="">બીલ</th>
+									<th class="" style="">આવક</th>
+								</tr>
+									</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+		</div>
+		<div id="B4" class="tabcontent">
+			<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">CSC</th>
+								<tr>
+								<tr>
+									<th class="" style="">ક્ર્મ</th>
+									
+									<th class="" style="">SERVICE</th>
+									<th class="" style="">આવક</th>
+								</tr>
+									</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+		</div>
+									
+		<div id="B5" class="tabcontent">
+			<div class="table-responsive" style="overflow-x:scroll;">
+						<table id="hsg3" border="1" class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="3" class="" style="text-align:center">અન્ય</th>
+								<tr>
+								<tr>
+								<th class="" style="">ક્ર્મ</th>
+									
+								<th class="" style="">નકલ</th>
+									<th class="" style="">આવક </th> 
+																</tr>
+									</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: CENTER;">1</td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									<td><input id="" name="" class="box" type="text" value=""></td>
+									</tr>
+							</tbody>
+						</table>
+				</div>
+		</div>
+					<ul class="inline spacing">
+						<li><button type="sumit" class="btn btn-large btn-primary" >Submit</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Cancel</button></li>
+						<li><button type="reset" class="btn btn-large btn-info" >Print</button></li>
+					</ul>
+				</fieldset>
+			</div>	
+		</div>	
+	</div>					
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
+
+</body>
+</html> 
